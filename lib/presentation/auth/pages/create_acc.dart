@@ -19,7 +19,7 @@ class CreateAcc extends StatelessWidget {
     final res = Responsive(context);
 
     return Scaffold(
-        appBar: const PrimaryAppBar(),
+        // appBar: const PrimaryAppBar(),
         body: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: res.medium),
@@ -30,10 +30,7 @@ class CreateAcc extends StatelessWidget {
               SizedBox(
                 height: res.large,
               ),
-              _emailField(res),
-              SizedBox(
-                height: res.large,
-              ),
+
               _firstNameField(res),
               SizedBox(
                 height: res.large,
@@ -47,18 +44,19 @@ class CreateAcc extends StatelessWidget {
                 height: res.large,
               ),
               _passwordField(res),
-              SizedBox(
-                height: res.large,
-              ),
-              _forget(context),
+
               SizedBox(
                 height: res.large,
               ),
               PrimaryBtn(
                   text: AppStrings.continueText,
                   onTap: () {
-                    AppRoutes.pushDetail(context);
-                  })
+                    AppRoutes.pushLogin(context);
+                  }),
+                  SizedBox(
+                    height: res.large,
+                  ),
+                  _forget(context),
             ]),
           ),
         ));
@@ -94,7 +92,7 @@ class CreateAcc extends StatelessWidget {
     return TextFormField(
       controller: _emailCon,
       decoration: InputDecoration(
-          hintText: "", contentPadding: EdgeInsets.all(res.small)),
+          hintText: AppStrings.emailAddress, contentPadding: EdgeInsets.all(res.small)),
     );
   }
 
@@ -109,7 +107,7 @@ class CreateAcc extends StatelessWidget {
   Widget _forget(c) {
     return Row(
       children: [
-        const Text(AppStrings.forgetPassword),
+        const Text(AppStrings.forgetPasswordQuestion),
         GestureDetector(
           onTap: () {
             AppRoutes.pushForget(c);

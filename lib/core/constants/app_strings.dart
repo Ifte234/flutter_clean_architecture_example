@@ -9,7 +9,7 @@ class AppStrings {
  static const String emailAddress = 'Email Address';
  static const String password = 'Password';
  static const String forgetPasswordQuestion = 'Forget Password ? ';
- static const String forgetPassword = 'Forget Password';
+ static const String forgetPassword = 'Forget Password ';
  static const String reset ='Reset';
  static const String men = 'Men';
  static const String women = 'Women';

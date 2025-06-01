@@ -78,7 +78,7 @@ class AppRoutes {
   static Future<void> pushSignUp(BuildContext c) => push(c, signUp);
   static Future<void> pushLogin(BuildContext c) => push(c, signUp);
   static Future<void> pushSplash(BuildContext c) => pushReplacement(c, splash);
-  static Future<void> pushCreateAcc(BuildContext c) => push(c, creatAcc);
+  static Future<void> pushCreateAcc(BuildContext c) => pushReplacement(c, creatAcc);
   static Future<void> pushDetail(BuildContext c) => push(c, detail);
   static Future<void> pushForget(BuildContext c) => push(c, forget);
   static Future<void> pushEmailSent(BuildContext c) => push(c, emailSent);
