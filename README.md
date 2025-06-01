@@ -11,16 +11,8 @@ Follow these steps to set up and run the project on your machine:
    cd your-flutter-project
    ```
 
-<<<<<<< HEAD
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
-## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).  
-Feel free to use, modify, and distribute it as you see fit.
-=======
 2. **Install Dependencies**
 
    ```bash
