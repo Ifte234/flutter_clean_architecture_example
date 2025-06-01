@@ -132,4 +132,3 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use, mod
 ---
 
 > *Happy coding!* ✨
->>>>>>> 0e217d3c4ac3df524a4d8b1e0774dbd2de5364b8
